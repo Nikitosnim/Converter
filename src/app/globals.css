@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/* стили под меню гамбургер */
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+
+.line {
+  fill:none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke:#000;
+  stroke-width:5.5;
+  stroke-linecap:round;
+}
+
+
+.ham4 .top {
+  stroke-dasharray: 40 121;
+}
+.ham4 .bottom {
+  stroke-dasharray: 40 121;
+}
+.ham4.active .top {
+  stroke-dashoffset: -68px;
+}
+.ham4.active .bottom {
+  stroke-dashoffset: -68px;
+}
+
+
+/* стили под десктоп меню */
+.corner-cuts {
+  position: relative;
+}
+
+.corner-cuts::before,
+.corner-cuts::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  /* длина уголка */
+  height: 12px;
+  /* длина уголка */
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}
+
+.corner-cuts::before {
+  top: 0;
+  left: 0;
+  border-top-color: oklch(62.7% 0.194 149.214);
+  /* зеленый цвет, например */
+  border-left-color: oklch(62.7% 0.194 149.214);
+}
+
+.corner-cuts::after {
+  bottom: 0;
+  right: 0;
+  border-bottom-color: oklch(62.7% 0.194 149.214);
+  border-right-color: oklch(62.7% 0.194 149.214);
+}
