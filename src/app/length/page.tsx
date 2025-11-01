@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function Length() {
     return (
-        <>
+        <main>
             <header className="flex justify-center m-4">
                 <h1 className="text-3xl">
                     Конвертер длинны
@@ -19,6 +19,6 @@ export default function Length() {
                 nameChapter='length'
             />
             <Description/>
-        </>
+        </main>
     );
 }

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function Volume() {
     return (
-        <>
+        <main>
             <header className="flex justify-center m-4">
                 <h1 className="text-3xl">
                     Конвертер объема
@@ -19,7 +19,7 @@ export default function Volume() {
                 nameChapter="volume"
             />
             <Description/>
-        </>
+        </main>
 
     );
 }

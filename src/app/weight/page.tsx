@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function Weight() {
     return (
-        <>
+        <main>
             <header className="flex justify-center m-4">
                 <h1 className="text-3xl">
                     Конвертер массы
@@ -19,6 +19,6 @@ export default function Weight() {
                 nameChapter="weight"
             />
             <Description/>
-        </>
+        </main>
     );
 }

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function Currencies() {
     return (
-        <>
+        <main>
             <header className="flex justify-center m-4">
                 <h1 className="text-3xl">
                     Конвертер валют
@@ -19,6 +19,6 @@ export default function Currencies() {
                 nameChapter="currencies"
             />
             <Description/>
-        </>
+        </main>
     );
 }

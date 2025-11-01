@@ -71,7 +71,8 @@ export default function Converter({ nameChapter }: TypePropsConverter) {
 
         }
     }, [nameChapter])
-    return (<section className="w-full flex justify-center">
+    return (
+    <section className="w-full flex justify-center">
         <form className="w-full max-w-256 flex flex-col justify-center items-center m-3 lg:flex-row">
 
             {/* первый блок */}
