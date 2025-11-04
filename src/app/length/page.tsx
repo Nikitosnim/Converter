@@ -1,6 +1,7 @@
 import Converter from "../_components/main/Converter";
 import type { Metadata } from "next";
 import { Description } from "../_components/main/Description";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
     title: 'длинны',
@@ -15,9 +16,11 @@ export default function Length() {
                     Конвертер длинны
                 </h1>
             </header>
-            <Converter
-                nameChapter='length'
-            />
+            <Suspense>
+                <Converter
+                    nameChapter='length'
+                />
+            </Suspense>
             <Description/>
         </main>
     );

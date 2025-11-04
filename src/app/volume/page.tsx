@@ -1,6 +1,7 @@
 import Converter from "../_components/main/Converter";
 import type { Metadata } from "next";
 import { Description } from "../_components/main/Description";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
     title: 'объема',
@@ -15,9 +16,11 @@ export default function Volume() {
                     Конвертер объема
                 </h1>
             </header>
-            <Converter
-                nameChapter="volume"
-            />
+            <Suspense>
+                <Converter
+                    nameChapter="volume"
+                />
+            </Suspense>
             <Description/>
         </main>
 

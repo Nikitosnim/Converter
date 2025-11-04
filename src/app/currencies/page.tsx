@@ -1,6 +1,7 @@
 import Converter from "../_components/main/Converter";
 import type { Metadata } from "next";
 import { Description } from "../_components/main/Description";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
     title: 'валют',
@@ -15,9 +16,11 @@ export default function Currencies() {
                     Конвертер валют
                 </h1>
             </header>
-            <Converter
-                nameChapter="currencies"
-            />
+            <Suspense>
+                <Converter
+                    nameChapter="currencies"
+                />
+            </Suspense>
             <Description/>
         </main>
     );

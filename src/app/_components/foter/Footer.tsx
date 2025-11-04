@@ -70,7 +70,7 @@ export default function Footer() {
             </a>
 
             <a
-                href={"/length?name1=Километров&name2=Миля+%28Морская%29"}
+                href={"/length?name1=Километр&name2=Миля+%28Морская%29"}
                 className="text-gray-200"
             >
                 Километров в Миле (Морская)

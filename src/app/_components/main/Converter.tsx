@@ -13,7 +13,7 @@ import {
 import { useSearchParams } from "next/navigation";
 import { FiRefreshCw } from "react-icons/fi";
 
-export const convert = new MeasurementConverter()
+const convert = new MeasurementConverter()
 
 export default function Converter({ nameChapter }: TypePropsConverter) {
     const [data, setData] = useState<currenciesUnit | undefined>()

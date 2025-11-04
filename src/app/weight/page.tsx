@@ -1,6 +1,7 @@
 import Converter from "../_components/main/Converter";
 import type { Metadata } from "next";
 import { Description } from "../_components/main/Description";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
     title: 'веса',
@@ -15,9 +16,11 @@ export default function Weight() {
                     Конвертер массы
                 </h1>
             </header>
-            <Converter
-                nameChapter="weight"
-            />
+            <Suspense>
+                <Converter
+                    nameChapter="weight"
+                />
+            </Suspense>
             <Description/>
         </main>
     );
