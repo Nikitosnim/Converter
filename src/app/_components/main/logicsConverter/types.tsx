@@ -99,7 +99,8 @@ export type TypePropsInput = {
 export type TypePropsInputDropdowns = {
     keyData: string[]
     name: string
-    listenerName: (arg: string) => undefined
+    listenerName: (arg: string) => void
+    setIsOpen: (arg:boolean) => void
 }
 
 // типы метадаты

@@ -15,6 +15,10 @@ export default function Input({ text, keyData, name, setName }: TypePropsInput) 
         setIsOpen(true)
     }
 
+    const setOpen = (bool: boolean) => {
+        setIsOpen(bool)
+    }
+
     const handleBlur = () => {
         setTimeout(() => setIsOpen(false), 250)
     }
@@ -41,6 +45,7 @@ export default function Input({ text, keyData, name, setName }: TypePropsInput) 
                     keyData={keyData}
                     name={name}
                     listenerName={listenerName}
+                    setIsOpen={setOpen}
                 />
             }
         </div>
