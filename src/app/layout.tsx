@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Header from "./_components/header/Header";
 import Footer from "./_components/foter/Footer";
-import Script from "next/script";
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -19,22 +18,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <Header />
           {children}
         <Footer />
-        
-        {/* Google Analytics */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-NYCLR65HDS"
-          strategy="afterInteractive"
-          async
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-NYCLR65HDS');
-          `}
-        </Script>
       </body>
     </html>
   );
